@@ -1,10 +1,9 @@
 import Ajv from "ajv";
 import { compare, genSalt, hash } from "bcryptjs";
-import express from "express";
+import express,{ Request , Response} from "express";
 import fs from "fs";
 import schema from "./schema.json";
 import server from "./server";
-import { Request , Response} from 'express';
 
 export const router = express.Router({
   strict: true,
