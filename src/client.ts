@@ -1,5 +1,5 @@
 import { request } from "http";
-import { update } from "json-update";
+
 import data from "./data.json";
 const password = process.env.CLAVE_DE_ACCESO;
 
@@ -18,7 +18,7 @@ async function sendInformation() {
       console.log(response.statusCode); // 200
     },
   );
-  await update(data, { credentials: { password: password } });
+  data.credentials.password = password;
   req.write(JSON.stringify(data));
   req.end();
 }
