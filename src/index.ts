@@ -4,7 +4,7 @@ import express from "express";
 import fs from "fs";
 import schema from "./schema.json";
 import server from "./server";
-import { sendInformation, validateInformation } from './client';
+import { Request , Response} from 'express';
 
 export const router = express.Router({
   strict: true,
