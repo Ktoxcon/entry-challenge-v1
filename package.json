@@ -21,7 +21,6 @@
     "printWidth": 92
   },
   "devDependencies": {
-    "@types/axios": "^0.14.0",
     "@types/node": "^14.0.13",
     "typescript": "^3.9.5"
   }
