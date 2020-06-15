@@ -1,5 +1,5 @@
 import { request } from "http";
-import data from './data.json';
+import data from "./data.json";
 const password = process.env.CLAVE_DE_ACCESO;
 
 async function sendInformation() {
